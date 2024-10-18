@@ -98,10 +98,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp MINUS  &kp U      &kp COMMA      &kp C                   &kp Z                             &kp Q                                 &kp G  &kp Y     &kp H  &kp SEMICOLON  &kp BSPC
-&kp TAB       &kp O      &kp I      &kp A          &kp N                   &kp M                             &kp D                                 &kp T  &kp S     &kp L  &kp R          &kp B
-&kp LEFT_GUI  &kp SQT    &kp SLASH  &kp DOT        &kp W                   &kp V                             &kp J                                 &kp P  &kp F     &kp K  &kp X          &kp ESC
-                                    &kp BACKSPACE  &layer_or_keypress 1 E  &tap_hold_keypress LCTRL SPACE    &tap_hold_keypress RIGHT_SHIFT ENTER  &mo 2  &kp RALT
+&kp TAB       &kp MINUS  &kp U      &kp COMMA      &kp C                   &kp Z                             &kp Q                                 &kp G                       &kp Y     &kp H  &kp SEMICOLON  &kp BSPC
+&kp TAB       &kp O      &kp I      &kp A          &kp N                   &kp M                             &kp D                                 &kp T                       &kp S     &kp L  &kp R          &kp B
+&kp LEFT_GUI  &kp SQT    &kp SLASH  &kp DOT        &kp W                   &kp V                             &kp J                                 &kp P                       &kp F     &kp K  &kp X          &kp ESC
+                                    &kp BACKSPACE  &layer_or_keypress 1 E  &tap_hold_keypress LCTRL SPACE    &tap_hold_keypress RIGHT_SHIFT ENTER  &layer_or_keypress 2 SPACE  &kp RALT
             >;
         };
 
