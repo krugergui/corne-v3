@@ -113,10 +113,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp PLUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY    &trans    &trans    &trans    &trans     &trans     &kp BSPC
-&trans     &kp N0     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp PG_UP  &kp HOME
-&kp LSHFT  &kp MINUS  &kp N7        &kp N8        &kp N9        &kp KP_EQUAL       &trans    &trans    &trans    &trans     &kp PG_DN  &kp END
-                                    &kp DELETE    &trans        &trans             &trans    &trans    &kp RALT
+&kp TAB    &kp PLUS                        &kp NUMBER_1                              &kp NUMBER_2                  &kp NUMBER_3                       &kp KP_MULTIPLY    &trans    &trans    &trans    &trans     &trans     &kp BSPC
+&trans     &tap_hold_keypress LEFT_GUI N0  &tap_hold_keypress LA(LEFT_ALT) NUMBER_4  &tap_hold_keypress LSHIFT N5  &tap_hold_keypress LCTRL NUMBER_6  &kp KP_DIVIDE      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp PG_UP  &kp HOME
+&kp LSHFT  &kp MINUS                       &kp N7                                    &kp N8                        &kp N9                             &kp KP_EQUAL       &trans    &trans    &trans    &trans     &kp PG_DN  &kp END
+                                                                                     &kp DELETE                    &trans                             &trans             &trans    &trans    &kp RALT
             >;
         };
 
