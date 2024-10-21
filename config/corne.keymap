@@ -84,6 +84,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "balanced";
         };
     };
 
@@ -101,7 +102,7 @@
 &kp TAB       &kp MINUS                  &kp U                          &kp COMMA                    &kp C                       &kp Z            &kp Q      &kp G                       &kp Y                       &kp H                          &kp SEMICOLON              &kp BSPC
 &kp TAB       &tap_hold_keypress LCMD O  &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A  &tap_hold_keypress LCTRL N  &kp M            &kp D      &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S  &tap_hold_keypress LEFT_ALT L  &tap_hold_keypress RGUI R  &kp B
 &kp LEFT_GUI  &kp SQT                    &kp SLASH                      &kp DOT                      &kp W                       &kp V            &kp J      &kp P                       &kp F                       &kp K                          &kp X                      &kp ESC
-                                                                        &kp DEL                      &layer_or_keypress 1 E      &kp BACKSPACE    &kp ENTER  &layer_or_keypress 2 SPACE  &kp RALT
+                                                                        &kp DEL                      &layer_or_keypress 1 E      &kp BACKSPACE    &kp ENTER  &layer_or_keypress 2 SPACE  &kp TAB
             >;
         };
 
