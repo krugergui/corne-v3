@@ -21,6 +21,7 @@
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <14 15>;
+            timeout-ms = <100>;
         };
 
         left_curly_braces {
@@ -36,6 +37,7 @@
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <20 21>;
+            timeout-ms = <100>;
         };
 
         right_braces {
@@ -46,6 +48,7 @@
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
+            timeout-ms = <100>;
         };
 
         LessThan {
@@ -80,6 +83,15 @@
         };
     };
 
+    macros {
+        deleteLastWord: deleteLastWord {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "DELETELASTWORD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -91,10 +103,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp MINUS                  &kp U                          &kp COMMA                    &kp C                       &kp Z            &kp Q      &kp G                       &kp Y                       &kp H                          &kp SEMICOLON              &kp BACKSLASH
-&kp BACKSPACE  &tap_hold_keypress LCMD O  &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A  &tap_hold_keypress LCTRL N  &kp M            &kp D      &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S  &tap_hold_keypress LEFT_ALT L  &tap_hold_keypress RGUI R  &kp B
-&kp PIPE       &kp SQT                    &kp SLASH                      &kp DOT                      &kp W                       &kp V            &kp J      &kp P                       &kp F                       &kp K                          &kp X                      &kp UNDER
-                                                                         &kp DEL                      &layer_or_keypress 1 E      &kp BACKSPACE    &kp ENTER  &layer_or_keypress 2 SPACE  &kp TAB
+&kp LC(BACKSPACE)  &kp MINUS                  &kp U                          &kp COMMA                    &kp C                       &kp Z            &kp Q      &kp G                       &kp Y                       &kp H                          &kp SEMICOLON              &kp BACKSLASH
+&kp TAB            &tap_hold_keypress LCMD O  &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A  &tap_hold_keypress LCTRL N  &kp M            &kp D      &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S  &tap_hold_keypress LEFT_ALT L  &tap_hold_keypress RGUI R  &kp B
+&kp PIPE           &kp SQT                    &kp SLASH                      &kp DOT                      &kp W                       &kp V            &kp J      &kp P                       &kp F                       &kp K                          &kp X                      &kp UNDER
+                                                                             &kp DEL                      &layer_or_keypress 1 E      &kp BACKSPACE    &kp ENTER  &layer_or_keypress 2 SPACE  &kp TAB
             >;
         };
 
