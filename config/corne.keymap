@@ -10,21 +10,85 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    macros {
-        rgblayer: rgb_layer {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings =
-                <&macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER &macro_param_1to1>,
-                <&macro_press>,
-                <&mo MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&rgb_ug RGB_TOG>;
+    combos {
+        compatible = "zmk,combos";
 
-            label = "MOMENTARY_LAYER_WITH_RGB_SELECTION";
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <2 3>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <14 15>;
+            timeout-ms = <50>;
+        };
+
+        left_curly_braces {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <26 27>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <8 9>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <20 21>;
+            timeout-ms = <50>;
+        };
+
+        right_braces {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <33 32>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+            timeout-ms = <50>;
+        };
+
+        LessThan {
+            bindings = <&kp LT>;
+            key-positions = <4 3>;
+        };
+
+        GreatherThan {
+            bindings = <&kp GT>;
+            key-positions = <7 8>;
+        };
+    };
+
+    behaviors {
+        layer_or_keypress: layer_or_keypress {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_OR_KEYPRESS";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        tap_hold_keypress: tap_hold_keypress {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_HOLD_KEYPRESS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+    };
+
+    macros {
+        deleteLastWord: deleteLastWord {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "DELETELASTWORD";
         };
     };
 
@@ -39,10 +103,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp LC(BACKSPACE)  &kp MINUS                  &kp U                          &kp COMMA                    &kp C                       &kp Z            &kp Q      &kp G                       &kp Y                       &kp H                      &kp SEMICOLON              &kp BACKSLASH
+&kp TAB            &tap_hold_keypress LCMD O  &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A  &tap_hold_keypress LCTRL N  &kp M            &kp D      &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S  &tap_hold_keypress RALT L  &tap_hold_keypress LGUI R  &kp B
+&kp PIPE           &kp SQT                    &kp SLASH                      &kp DOT                      &kp W                       &kp V            &kp J      &kp P                       &kp F                       &kp K                      &kp X                      &kp UNDER
+                                                                             &kp DEL                      &layer_or_keypress 1 E      &kp BACKSPACE    &kp ENTER  &layer_or_keypress 2 SPACE  &kp TAB
             >;
         };
 
@@ -54,10 +118,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans  &kp PLUS                        &kp NUMBER_1                              &kp NUMBER_2                  &kp NUMBER_3                       &kp KP_MULTIPLY    &trans    &trans    &trans  &trans     &trans                         &trans
+&trans  &tap_hold_keypress LEFT_GUI N0  &tap_hold_keypress LA(LEFT_ALT) NUMBER_4  &tap_hold_keypress LSHIFT N5  &tap_hold_keypress LCTRL NUMBER_6  &kp KP_DIVIDE      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &tap_hold_keypress LGUI PG_UP  &kp HOME
+&trans  &kp MINUS                       &kp N7                                    &kp N8                        &kp N9                             &kp KP_EQUAL       &trans    &trans    &trans  &trans     &kp PG_DN                      &kp END
+                                                                                  &trans                        &trans                             &trans             &trans    &trans    &trans
             >;
         };
 
@@ -69,10 +133,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &trans   &trans   &kp BSPC
+&trans   &trans    &trans  &trans    &trans    &trans       &trans     &kp EQUAL  &trans           &trans   &trans   &kp GRAVE
+&kp F1   &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp F7     &kp F8     &kp F9           &kp F10  &kp F11  &kp F12
+                           &trans    &trans    &trans       &trans     &trans     &kp RALT
             >;
         };
 
