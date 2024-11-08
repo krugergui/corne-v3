@@ -90,6 +90,16 @@
             bindings = <&kp LS(LC(V))>;
             key-positions = <17 16 15>;
         };
+
+        apostrophe {
+            bindings = <&kp APOS>;
+            key-positions = <25 26>;
+        };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <25 26 27>;
+        };
     };
 
     behaviors {
