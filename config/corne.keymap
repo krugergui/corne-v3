@@ -76,6 +76,11 @@
             bindings = <&cut>;
             key-positions = <29 28>;
         };
+
+        capslock {
+            bindings = <&kp CAPS>;
+            key-positions = <34 35>;
+        };
     };
 
     behaviors {
@@ -134,10 +139,10 @@
 
         default_layer {
             bindings = <
-&kp LC(BACKSPACE)  &kp MINUS   &kp U           &kp COMMA                    &kp C        &kp Z                             &kp Q                       &kp G        &kp Y                     &kp H       &kp SEMICOLON  &kp BACKSLASH
-&kp TAB            &mt LCMD O  &mt LEFT_ALT I  &mt LSHIFT A                 &mt LCTRL N  &kp M                             &kp D                       &mt RCTRL T  &mt RSHFT S               &mt RALT L  &mt LGUI R     &kp B
-&kp PIPE           &kp SQT     &kp SLASH       &kp DOT                      &kp W        &kp V                             &kp J                       &kp P        &kp F                     &kp K       &kp X          &kp UNDER
-                                               &layer_or_keypress 2 DELETE  &kp E        &layer_or_keypress 1 BACKSPACE    &layer_or_keypress 2 ENTER  &kp SPACE    &layer_or_keypress 1 TAB
+&kp LC(BACKSPACE)  &kp MINUS                  &kp U                          &kp COMMA                    &kp C                       &kp Z                             &kp Q                       &kp G                       &kp Y                       &kp H                      &kp SEMICOLON              &kp BACKSLASH
+&kp TAB            &tap_hold_keypress LCMD O  &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A  &tap_hold_keypress LCTRL N  &kp M                             &kp D                       &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S  &tap_hold_keypress RALT L  &tap_hold_keypress LGUI R  &kp B
+&kp PIPE           &kp SQT                    &kp SLASH                      &kp DOT                      &kp W                       &kp V                             &kp J                       &kp P                       &kp F                       &kp K                      &kp X                      &kp UNDER
+                                                                             &layer_or_keypress 2 DELETE  &kp E                       &layer_or_keypress 1 BACKSPACE    &layer_or_keypress 2 ENTER  &kp SPACE                   &layer_or_keypress 1 TAB
             >;
         };
 
@@ -152,10 +157,10 @@
 
         raise_layer {
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &trans   &trans   &kp BSPC
-&trans   &trans    &trans  &trans    &trans    &trans       &trans     &kp EQUAL  &trans           &trans   &trans   &kp GRAVE
-&kp F1   &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp F7     &kp F8     &kp F9           &kp F10  &kp F11  &kp F12
-                           &trans    &trans    &trans       &trans     &trans     &kp RALT
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp EQUAL  &trans     &kp BSPC
+&trans   &trans    &trans  &trans    &trans    &trans       &trans     &trans    &trans           &trans     &kp TILDE  &kp GRAVE
+&kp F1   &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp F7     &kp F8    &kp F9           &kp F10    &kp F11    &kp F12
+                           &trans    &trans    &trans       &trans     &trans    &trans
             >;
         };
 
