@@ -138,10 +138,10 @@
 
         default_layer {
             bindings = <
-&kp TILDE  &kp MINUS                  &kp U                          &kp COMMA                     &kp C                       &kp Z              &kp Q        &kp G                       &kp Y                                     &kp H                      &kp SEMICOLON              &kp BACKSLASH
-&kp TAB    &tap_hold_keypress LCMD O  &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A   &tap_hold_keypress LCTRL N  &kp M              &kp D        &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S                &tap_hold_keypress RALT L  &tap_hold_keypress LGUI R  &kp B
-&kp PIPE   &kp SQT                    &kp SLASH                      &kp DOT                       &kp W                       &kp V              &kp J        &kp P                       &kp F                                     &kp K                      &kp X                      &kp UNDER
-                                                                     &tap_or_chage_layer 1 DELETE  &kp E                       &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
+&kp TILDE  &kp MINUS                    &kp U                          &kp COMMA                     &kp C                       &kp Z              &kp Q        &kp G                       &kp Y                                     &kp H                      &kp SEMICOLON              &kp BACKSLASH
+&kp TAB    &kp O                        &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A   &tap_hold_keypress LCTRL N  &kp M              &kp D        &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S                &tap_hold_keypress RALT L  &kp R                      &kp B
+&kp PIPE   &tap_hold_keypress LGUI SQT  &kp SLASH                      &kp DOT                       &kp W                       &kp V              &kp J        &kp P                       &kp F                                     &kp K                      &tap_hold_keypress RGUI X  &kp UNDER
+                                                                       &tap_or_chage_layer 1 DELETE  &kp E                       &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
             >;
         };
 
