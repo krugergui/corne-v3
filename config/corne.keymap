@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -63,12 +62,12 @@
         };
 
         paste {
-            bindings = <&paste>;
+            bindings = <&kp LC(V)>;
             key-positions = <16 17>;
         };
 
         cut {
-            bindings = <&cut>;
+            bindings = <&kp LC(X)>;
             key-positions = <29 28>;
         };
 
@@ -122,35 +121,15 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
-    };
 
-    macros {
-        deleteLastWord: deleteLastWord {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "DELETELASTWORD";
-        };
+        tap_or_chage_layer: tap_or_chage_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_OR_CHAGE_LAYER";
+            bindings = <&tog>, <&kp>;
 
-        copy: copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LCTRL &kp C &kt LCTRL>;
-            label = "COPY";
-        };
-
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LCTRL &kp V &kt LCTRL>;
-            label = "PASTE";
-        };
-
-        cut: cut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LCTRL &kp X &kt LCTRL>;
-            label = "CUT";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
         };
     };
 
@@ -159,10 +138,10 @@
 
         default_layer {
             bindings = <
-&kp TILDE  &kp MINUS                  &kp U                          &kp COMMA                    &kp C                       &kp Z              &kp Q        &kp G                       &kp Y                                     &kp H                      &kp SEMICOLON              &kp BACKSLASH
-&kp TAB    &tap_hold_keypress LCMD O  &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A  &tap_hold_keypress LCTRL N  &kp M              &kp D        &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S                &tap_hold_keypress RALT L  &tap_hold_keypress LGUI R  &kp B
-&kp PIPE   &kp SQT                    &kp SLASH                      &kp DOT                      &kp W                       &kp V              &kp J        &kp P                       &kp F                                     &kp K                      &kp X                      &kp UNDER
-                                                                     &lt 2 DELETE                 &kp E                       &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
+&kp TILDE  &kp MINUS                  &kp U                          &kp COMMA                     &kp C                       &kp Z              &kp Q        &kp G                       &kp Y                                     &kp H                      &kp SEMICOLON              &kp BACKSLASH
+&kp TAB    &tap_hold_keypress LCMD O  &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A   &tap_hold_keypress LCTRL N  &kp M              &kp D        &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S                &tap_hold_keypress RALT L  &tap_hold_keypress LGUI R  &kp B
+&kp PIPE   &kp SQT                    &kp SLASH                      &kp DOT                       &kp W                       &kp V              &kp J        &kp P                       &kp F                                     &kp K                      &kp X                      &kp UNDER
+                                                                     &tap_or_chage_layer 1 DELETE  &kp E                       &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
             >;
         };
 
