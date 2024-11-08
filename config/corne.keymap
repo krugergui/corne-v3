@@ -156,8 +156,8 @@
 
         raise_layer {
             bindings = <
-&trans  &kp EXCL                           &kp AT                            &kp HASH                           &kp DLLR                        &kp PRCNT    &kp PG_UP       &kp PAGE_DOWN                  &kp HOME                     &kp END                             &trans   &kp BSPC
-&trans  &tap_hold_keypress LEFT_GUI CARET  &tap_hold_keypress LEFT_ALT AMPS  &tap_hold_keypress LSHFT ASTERISK  &tap_hold_keypress LCTRL EQUAL  &kp GRAVE    &kp LEFT_ARROW  &tap_hold_keypress RCTRL DOWN  &tap_hold_keypress RSHFT UP  &tap_hold_keypress RIGHT_ALT RIGHT  &trans   &kp GRAVE
+&trans  &kp EXCL                           &kp AT                            &kp HASH                           &kp DLLR                        &kp PRCNT    &kp PG_UP       &kp PAGE_DOWN                  &kp HOME                     &kp END                             &trans   &trans
+&trans  &tap_hold_keypress LEFT_GUI CARET  &tap_hold_keypress LEFT_ALT AMPS  &tap_hold_keypress LSHFT ASTERISK  &tap_hold_keypress LCTRL EQUAL  &kp GRAVE    &kp LEFT_ARROW  &tap_hold_keypress RCTRL DOWN  &tap_hold_keypress RSHFT UP  &tap_hold_keypress RIGHT_ALT RIGHT  &trans   &trans
 &kp F1  &kp F2                             &kp F3                            &kp F4                             &kp F5                          &kp F6       &kp F7          &kp F8                         &kp F9                       &kp F10                             &kp F11  &kp F12
                                                                              &trans                             &trans                          &trans       &trans          &trans                         &trans
             >;
