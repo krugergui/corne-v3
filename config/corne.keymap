@@ -158,7 +158,7 @@
 
         lower_layer {
             bindings = <
-&kp PLUS   &kp MINUS                       &kp NUMBER_1                          &kp NUMBER_2                  &kp NUMBER_3                       &kp ASTRK    &kp ASTRK  &kp N1                             &kp N2                       &kp N3                                 &kp MINUS                    &kp PLUS
+&kp MINUS  &kp PLUS                        &kp NUMBER_1                          &kp NUMBER_2                  &kp NUMBER_3                       &kp ASTRK    &kp ASTRK  &kp N1                             &kp N2                       &kp N3                                 &kp MINUS                    &kp PLUS
 &trans     &tap_hold_keypress LEFT_GUI N0  &tap_hold_keypress LEFT_ALT NUMBER_4  &tap_hold_keypress LSHIFT N5  &tap_hold_keypress LCTRL NUMBER_6  &kp SLASH    &kp FSLH   &tap_hold_keypress RCTRL NUMBER_4  &tap_hold_keypress RSHFT N5  &tap_hold_keypress RIGHT_ALT NUMBER_6  &tap_hold_keypress RMETA N0  &kp TAB
 &kp COMMA  &kp DOT                         &kp N7                                &kp N8                        &kp N9                             &kp EQUAL    &kp EQUAL  &kp N7                             &kp N8                       &kp N9                                 &kp DOT                      &kp COMMA
                                                                                  &trans                        &kp KP_NUMBER_0                    &trans       &trans     &trans                             &trans
