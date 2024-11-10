@@ -100,28 +100,25 @@
             bindings = <&sys_reset>;
             key-positions = <35 34 33 32 39>;
             layers = <0>;
-            timeout-ms = <2000>;
         };
 
         reboot_left {
             bindings = <&sys_reset>;
             key-positions = <38 24 25 26 27>;
             layers = <0>;
-            timeout-ms = <2000>;
         };
 
         bootloader_right {
             bindings = <&bootloader>;
             key-positions = <6 7 8 9 39>;
-            timeout-ms = <2000>;
             layers = <0>;
         };
 
         bootloader_left {
             bindings = <&bootloader>;
             key-positions = <2 3 4 5 38>;
-            timeout-ms = <2000>;
             layers = <0>;
+            slow-release;
         };
     };
 
@@ -133,9 +130,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            quick-tap-ms = <300>;
             require-prior-idle-ms = <200>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
 
         tap_hold_keypress: tap_hold_keypress {
