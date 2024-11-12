@@ -98,8 +98,7 @@
 
         reboot_right {
             bindings = <&sys_reset>;
-            key-positions = <35 34 33 32 39>;
-            layers = <0>;
+            key-positions = <2 3 4 5>;
         };
 
         reboot_left {
@@ -110,8 +109,7 @@
 
         bootloader_right {
             bindings = <&bootloader>;
-            key-positions = <6 7 8 9 39>;
-            layers = <0>;
+            key-positions = <6 7 8 9>;
         };
 
         bootloader_left {
