@@ -96,28 +96,6 @@
             key-positions = <25 26>;
         };
 
-        reboot_right {
-            bindings = <&sys_reset>;
-            key-positions = <2 3 4 5>;
-        };
-
-        reboot_left {
-            bindings = <&sys_reset>;
-            key-positions = <38 24 25 26 27>;
-            layers = <0>;
-        };
-
-        bootloader_right {
-            bindings = <&bootloader>;
-            key-positions = <6 7 8 9>;
-        };
-
-        bootloader_left {
-            bindings = <&bootloader>;
-            key-positions = <2 3 4 5 38>;
-            layers = <0>;
-            slow-release;
-        };
     };
 
     behaviors {
