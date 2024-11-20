@@ -97,7 +97,7 @@
         };
 
         colon {
-            bindings = <&kp COLON>;
+            bindings = <&kp SEMICOLON>;
             key-positions = <10 23>;
         };
     };
@@ -154,7 +154,7 @@
 
         default_layer {
             bindings = <
-&kp TILDE                  &kp MINUS                    &kp U                          &kp COMMA                     &kp C                       &kp Z                             &kp Q                       &kp G                       &kp Y                                     &kp H                      &kp SEMICOLON              &kp BACKSLASH
+&kp TILDE                  &kp MINUS                    &kp U                          &kp COMMA                     &kp C                       &kp Z                             &kp Q                       &kp G                       &kp Y                                     &kp H                      &kp COLON                  &kp BACKSLASH
 &kp TAB                    &kp O                        &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A   &tap_hold_keypress LCTRL N  &kp M                             &kp D                       &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S                &tap_hold_keypress RALT L  &kp R                      &kp B
 &layer_or_keypress 4 PIPE  &tap_hold_keypress LGUI SQT  &kp SLASH                      &kp DOT                       &kp W                       &kp V                             &kp J                       &kp P                       &kp F                                     &kp K                      &tap_hold_keypress RGUI X  &layer_or_keypress 4 UNDER
                                                                                        &tap_or_chage_layer 1 DELETE  &kp E                       &layer_or_keypress 1 BACKSPACE    &layer_or_keypress 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
