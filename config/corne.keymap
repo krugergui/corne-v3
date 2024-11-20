@@ -95,6 +95,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <25 26>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <10 23>;
+        };
     };
 
     behaviors {
