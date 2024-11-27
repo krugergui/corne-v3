@@ -107,12 +107,12 @@
         };
 
         combo_u_umlaut {
-            bindings = <&macro_a_umlaut>;
+            bindings = <&macro_u_umlaut>;
             key-positions = <35 2>;
         };
 
         combo_o_umlaut {
-            bindings = <&none>;
+            bindings = <&macro_u_umlaut>;
             key-positions = <13 35>;
         };
     };
@@ -179,14 +179,14 @@
             label = "MACRO_A_UMLAUT";
         };
 
-        macro_e_umlaut: macro_e_umlaut {
+        macro_u_umlaut: macro_e_umlaut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp LS(B) &kp N4 &kp ENTER>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp LS(F) &kp C &kp ENTER>;
             label = "MACRO_E_UMLAUT";
         };
 
-        macro_u_umlaut: macro_u_umlaut {
+        macro_o_umlaut: macro_u_umlaut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp LS(F) &kp NUMBER_6 &kp ENTER>;
