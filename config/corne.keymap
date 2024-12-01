@@ -127,8 +127,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <200>;
-            flavor = "tap-preferred";
+            require-prior-idle-ms = <0>;
+            flavor = "balanced";
         };
 
         tap_hold_keypress: tap_hold_keypress {
