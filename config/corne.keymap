@@ -200,10 +200,10 @@
 
         default_layer {
             bindings = <
-&kp TILDE                  &kp MINUS                    &kp U                          &kp COMMA                     &kp C                       &kp Z                             &kp Q                       &kp G                       &kp Y                                     &kp H                      &kp COLON                  &kp BACKSLASH
-&kp TAB                    &kp O                        &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A   &tap_hold_keypress LCTRL N  &kp M                             &kp D                       &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S                &tap_hold_keypress RALT L  &kp R                      &kp B
-&layer_or_keypress 4 PIPE  &tap_hold_keypress LGUI SQT  &kp SLASH                      &kp DOT                       &kp W                       &kp V                             &kp J                       &kp P                       &kp F                                     &kp K                      &tap_hold_keypress RGUI X  &layer_or_keypress 4 UNDER
-                                                                                       &tap_or_chage_layer 1 DELETE  &kp E                       &layer_or_keypress 1 BACKSPACE    &layer_or_keypress 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
+&kp TILDE                           &kp MINUS                    &kp U                          &kp COMMA                     &kp C                       &kp Z                             &kp Q                       &kp G                       &kp Y                                     &kp H                      &kp COLON                  &kp BACKSLASH
+&kp TAB                             &kp O                        &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A   &tap_hold_keypress LCTRL N  &kp M                             &kp D                       &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S                &tap_hold_keypress RALT L  &kp R                      &kp B
+&layer_or_keypress 4 LC(BACKSPACE)  &tap_hold_keypress LGUI SQT  &kp SLASH                      &kp DOT                       &kp W                       &kp V                             &kp J                       &kp P                       &kp F                                     &kp K                      &tap_hold_keypress RGUI X  &layer_or_keypress 4 UNDER
+                                                                                                &tap_or_chage_layer 1 DELETE  &kp E                       &layer_or_keypress 1 BACKSPACE    &layer_or_keypress 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
             >;
         };
 
@@ -218,10 +218,10 @@
 
         raise_layer {
             bindings = <
-&trans  &kp EXCL                    &kp AT                            &kp HASH                           &macro_euro_sign                 &kp PRCNT    &kp PAGE_DOWN   &kp PG_UP                      &kp HOME                     &kp END                             &trans                       &trans
-&trans  &kp CARET                   &tap_hold_keypress LEFT_ALT AMPS  &tap_hold_keypress LSHFT ASTERISK  &tap_hold_keypress LCTRL DOLLAR  &kp GRAVE    &kp LEFT_ARROW  &tap_hold_keypress RCTRL DOWN  &tap_hold_keypress RSHFT UP  &tap_hold_keypress RIGHT_ALT RIGHT  &trans                       &trans
-&kp F1  &tap_hold_keypress LGUI F2  &kp F3                            &kp F4                             &kp F5                           &kp F6       &kp F7          &kp F8                         &kp F9                       &kp F10                             &tap_hold_keypress RGUI F11  &kp F12
-                                                                      &trans                             &trans                           &trans       &trans          &trans                         &trans
+&trans    &kp EXCL                    &kp AT                            &kp HASH                           &macro_euro_sign                 &kp PRCNT    &kp PAGE_DOWN   &kp PG_UP                      &kp HOME                     &kp END                             &trans                       &trans
+&kp PIPE  &kp CARET                   &tap_hold_keypress LEFT_ALT AMPS  &tap_hold_keypress LSHFT ASTERISK  &tap_hold_keypress LCTRL DOLLAR  &kp GRAVE    &kp LEFT_ARROW  &tap_hold_keypress RCTRL DOWN  &tap_hold_keypress RSHFT UP  &tap_hold_keypress RIGHT_ALT RIGHT  &trans                       &trans
+&kp F1    &tap_hold_keypress LGUI F2  &kp F3                            &kp F4                             &kp F5                           &kp F6       &kp F7          &kp F8                         &kp F9                       &kp F10                             &tap_hold_keypress RGUI F11  &kp F12
+                                                                        &trans                             &trans                           &trans       &trans          &trans                         &trans
             >;
         };
 
