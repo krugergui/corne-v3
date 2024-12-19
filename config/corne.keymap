@@ -245,10 +245,10 @@
 
         test_new_lower {
             bindings = <
-&trans           &kp MINUS                     &kp PLUS                              &kp COMMA                               &trans                                    &trans    &trans  &trans                              &trans                            &trans                           &trans  &trans
-&trans           &kp NUMBER_1                  &tap_hold_keypress LEFT_ALT NUMBER_2  &tap_hold_keypress LEFT_SHIFT NUMBER_3  &tap_hold_keypress LEFT_CONTROL NUMBER_4  &kp N5    &kp N6  &tap_hold_keypress LEFT_CONTROL N7  &tap_hold_keypress LEFT_SHIFT N8  &tap_hold_keypress RIGHT_ALT N9  &kp N0  &kp EQUAL
-&kp KP_ASTERISK  &tap_hold_keypress SLASH DOT  &trans                                &kp DOT                                 &trans                                    &trans    &trans  &trans                              &trans                            &trans                           &trans  &trans
-                                                                                     &trans                                  &trans                                    &trans    &trans  &trans                              &kp BACKSPACE
+&trans           &kp MINUS                     &kp PLUS                              &kp COMMA                               &trans                                    &trans          &trans  &trans                                    &trans                            &trans                           &trans  &trans
+&trans           &kp NUMBER_1                  &tap_hold_keypress LEFT_ALT NUMBER_1  &tap_hold_keypress LEFT_SHIFT NUMBER_2  &tap_hold_keypress LEFT_CONTROL NUMBER_3  &kp NUMBER_4    &kp N5  &tap_hold_keypress LEFT_CONTROL NUMBER_6  &tap_hold_keypress LEFT_SHIFT N7  &tap_hold_keypress RIGHT_ALT N8  &kp N9  &kp EQUAL
+&kp KP_ASTERISK  &tap_hold_keypress SLASH DOT  &trans                                &kp DOT                                 &trans                                    &trans          &trans  &trans                                    &trans                            &trans                           &trans  &trans
+                                                                                     &trans                                  &trans                                    &trans          &trans  &trans                                    &kp BACKSPACE
             >;
         };
     };
