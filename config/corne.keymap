@@ -218,7 +218,7 @@
 
         raise_layer {
             bindings = <
-&trans    &kp EXCL                    &kp AT                            &kp HASH                           &macro_euro_sign                 &kp PRCNT    &kp PAGE_DOWN   &kp PG_UP                      &kp HOME                     &kp END                             &trans                       &trans
+&trans    &kp EXCL                    &kp AT                            &kp HASH                           &macro_euro_sign                 &kp PRCNT    &kp PG_UP       &kp PAGE_DOWN                  &kp HOME                     &kp END                             &trans                       &trans
 &kp PIPE  &kp CARET                   &tap_hold_keypress LEFT_ALT AMPS  &tap_hold_keypress LSHFT ASTERISK  &tap_hold_keypress LCTRL DOLLAR  &kp GRAVE    &kp LEFT_ARROW  &tap_hold_keypress RCTRL DOWN  &tap_hold_keypress RSHFT UP  &tap_hold_keypress RIGHT_ALT RIGHT  &trans                       &trans
 &kp F1    &tap_hold_keypress LGUI F2  &kp F3                            &kp F4                             &kp F5                           &kp F6       &kp F7          &kp F8                         &kp F9                       &kp F10                             &tap_hold_keypress RGUI F11  &kp F12
                                                                         &trans                             &trans                           &trans       &trans          &trans                         &trans
@@ -245,10 +245,9 @@
 
         test_new_lower {
             bindings = <
-&kp PLUS         &kp MINUS                     &trans  &kp COMMA  &trans           &trans    &trans     &trans  &trans         &trans  &trans                       &trans
-&trans           &kp N0                        &kp N1  &kp N2     &kp N3           &kp N4    &kp N5     &kp N6  &kp N7         &kp N8  &kp N9                       &kp EQUAL
-&kp KP_ASTERISK  &tap_hold_keypress SLASH DOT  &trans  &kp DOT    &trans           &trans    &trans     &trans  &trans         &trans  &trans                       &trans
-                                                       &trans     &trans     &trans    &trans     &trans  &kp BACKSPACE
+&trans           &kp MINUS                        &kp PLUS                              &kp COMMA                               &trans                                    &trans    &trans        &trans                              &trans                            &trans                           &trans  &trans
+&trans           &kp NUMBER_1                     &tap_hold_keypress LEFT_ALT NUMBER_2  &tap_hold_keypress LEFT_SHIFT NUMBER_3  &tap_hold_keypress LEFT_CONTROL NUMBER_4  &kp N5    &kp NUMBER_6  &tap_hold_keypress LEFT_CONTROL N7  &tap_hold_keypress LEFT_SHIFT N8  &tap_hold_keypress RIGHT_ALT N9  &kp N0  &kp EQUAL
+&kp KP_ASTERISK  &tap_hold_keypress LEFT_WIN DOT  &trans                                &kp DOT                                 &trans                                    &trans    &trans        &trans                              &trans                            &trans                           &trans  &trans
             >;
         };
     };
@@ -258,6 +257,11 @@
 
         tri_layer {
             if-layers = <1 2>;
+            then-layer = <3>;
+        };
+
+        tri_layer_test {
+            if-layers = <5 2>;
             then-layer = <3>;
         };
     };
