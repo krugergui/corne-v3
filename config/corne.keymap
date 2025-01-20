@@ -203,16 +203,15 @@
 &kp TILDE                           &kp MINUS                    &kp U                          &kp COMMA                     &kp C                       &kp Z                             &kp Q                       &kp G                       &kp Y                                     &kp H                      &kp COLON                  &kp BACKSLASH
 &kp TAB                             &kp O                        &tap_hold_keypress LEFT_ALT I  &tap_hold_keypress LSHIFT A   &tap_hold_keypress LCTRL N  &kp M                             &kp D                       &tap_hold_keypress RCTRL T  &tap_hold_keypress RSHFT S                &tap_hold_keypress RALT L  &kp R                      &kp B
 &layer_or_keypress 4 LC(BACKSPACE)  &tap_hold_keypress LGUI SQT  &kp SLASH                      &kp DOT                       &kp W                       &kp V                             &kp J                       &kp P                       &kp F                                     &kp K                      &tap_hold_keypress RGUI X  &layer_or_keypress 4 UNDER
-                                                                                                &tap_or_chage_layer 5 DELETE  &kp E                       &layer_or_keypress 5 BACKSPACE    &layer_or_keypress 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
+                                                                                                &tap_or_chage_layer 1 DELETE  &kp E                       &layer_or_keypress 1 BACKSPACE    &layer_or_keypress 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
             >;
         };
 
-        lower_layer {
+        lower {
             bindings = <
-&kp MINUS  &kp PLUS                     &kp NUMBER_1                          &kp NUMBER_2                  &kp NUMBER_3                       &kp ASTRK    &kp ASTRK  &kp N1                             &kp N2                       &kp N3                                 &kp MINUS                    &kp PLUS
-&trans     &kp N0                       &tap_hold_keypress LEFT_ALT NUMBER_4  &tap_hold_keypress LSHIFT N5  &tap_hold_keypress LCTRL NUMBER_6  &kp SLASH    &kp FSLH   &tap_hold_keypress RCTRL NUMBER_4  &tap_hold_keypress RSHFT N5  &tap_hold_keypress RIGHT_ALT NUMBER_6  &kp N0                       &kp TAB
-&kp COMMA  &tap_hold_keypress LGUI DOT  &kp N7                                &kp N8                        &kp N9                             &kp EQUAL    &kp EQUAL  &kp N7                             &kp N8                       &kp N9                                 &tap_hold_keypress RGUI DOT  &kp COMMA
-                                                                              &trans                        &kp KP_NUMBER_0                    &trans       &trans     &trans                             &kp BACKSPACE
+&trans           &kp MINUS                        &kp PLUS                              &kp COMMA                               &trans                                    &trans    &trans        &trans                              &trans                            &trans                           &trans  &trans
+&trans           &kp NUMBER_1                     &tap_hold_keypress LEFT_ALT NUMBER_2  &tap_hold_keypress LEFT_SHIFT NUMBER_3  &tap_hold_keypress LEFT_CONTROL NUMBER_4  &kp N5    &kp NUMBER_6  &tap_hold_keypress LEFT_CONTROL N7  &tap_hold_keypress LEFT_SHIFT N8  &tap_hold_keypress RIGHT_ALT N9  &kp N0  &kp EQUAL
+&kp KP_ASTERISK  &tap_hold_keypress LEFT_WIN DOT  &trans                                &kp DOT                                 &trans                                    &trans    &trans        &trans                              &trans                            &trans                           &trans  &trans
             >;
         };
 
@@ -242,14 +241,6 @@
                         &trans  &trans  &trans         &trans       &trans  &trans
             >;
         };
-
-        test_new_lower {
-            bindings = <
-&trans           &kp MINUS                        &kp PLUS                              &kp COMMA                               &trans                                    &trans    &trans        &trans                              &trans                            &trans                           &trans  &trans
-&trans           &kp NUMBER_1                     &tap_hold_keypress LEFT_ALT NUMBER_2  &tap_hold_keypress LEFT_SHIFT NUMBER_3  &tap_hold_keypress LEFT_CONTROL NUMBER_4  &kp N5    &kp NUMBER_6  &tap_hold_keypress LEFT_CONTROL N7  &tap_hold_keypress LEFT_SHIFT N8  &tap_hold_keypress RIGHT_ALT N9  &kp N0  &kp EQUAL
-&kp KP_ASTERISK  &tap_hold_keypress LEFT_WIN DOT  &trans                                &kp DOT                                 &trans                                    &trans    &trans        &trans                              &trans                            &trans                           &trans  &trans
-            >;
-        };
     };
 
     conditional_layers {
@@ -257,11 +248,6 @@
 
         tri_layer {
             if-layers = <1 2>;
-            then-layer = <3>;
-        };
-
-        tri_layer_test {
-            if-layers = <5 2>;
             then-layer = <3>;
         };
     };
