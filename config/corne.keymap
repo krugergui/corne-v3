@@ -116,6 +116,11 @@
             bindings = <&macro_o_umlaut>;
             key-positions = <13 35>;
         };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <41 35>;
+        };
     };
 
     behaviors {
