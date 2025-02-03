@@ -1,0 +1,260 @@
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layers:
+  default:
+  - '~'
+  - '-'
+  - U
+  - ','
+  - C
+  - Z
+  - Q
+  - G
+  - Y
+  - H
+  - ':'
+  - \
+  - TAB
+  - O
+  - {t: I, h: LEFT ALT}
+  - {t: A, h: LSHIFT}
+  - {t: N, h: LCTRL}
+  - M
+  - D
+  - {t: T, h: RCTRL}
+  - {t: S, h: RSHFT}
+  - {t: L, h: RALT}
+  - R
+  - B
+  - {t: Ctl+BACKSPACE, h: system}
+  - {t: '''', h: LGUI}
+  - /
+  - .
+  - W
+  - V
+  - J
+  - P
+  - F
+  - K
+  - {t: X, h: RGUI}
+  - {t: _, h: system}
+  - {t: DELETE, h: lower}
+  - E
+  - {t: BACKSPACE, h: lower}
+  - {t: ENTER, h: raise}
+  - SPACE
+  - {t: LEFT SHIFT, h: raise}
+  lower:
+  - {t: ▽, type: trans}
+  - '-'
+  - +
+  - ','
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - {t: '2', h: LEFT ALT}
+  - {t: '3', h: LEFT SHIFT}
+  - {t: '4', h: LEFT CONTROL}
+  - '5'
+  - '6'
+  - {t: '7', h: LEFT CONTROL}
+  - {t: '8', h: LEFT SHIFT}
+  - {t: '9', h: RIGHT ALT}
+  - '0'
+  - '='
+  - KP ASTERISK
+  - {t: ., h: LEFT WIN}
+  - {t: ▽, type: trans}
+  - .
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  raise:
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - '&macro_euro_sign'
+  - '%'
+  - PG UP
+  - PAGE DOWN
+  - HOME
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '|'
+  - ^
+  - {t: '&', h: LEFT ALT}
+  - {t: '*', h: LSHFT}
+  - {t: $, h: LCTRL}
+  - '`'
+  - LEFT ARROW
+  - {t: DOWN, h: RCTRL}
+  - {t: UP, h: RSHFT}
+  - {t: RIGHT, h: RIGHT ALT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - {t: F2, h: LGUI}
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: F11, h: RGUI}
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  both:
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - RGB EFF
+  - RGB TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - RGB EFR
+  - {t: ▽, type: trans}
+  - BT CLR
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - OUT USB
+  - OUT BLE
+  - VOL UP
+  - VOL DN
+  - MUTE
+  - PLAY PAUSE
+  - PREV
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  system:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sys_reset'
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [2, 3]
+  k: (
+- p: [14, 15]
+  k: '['
+- p: [26, 27]
+  k: '{'
+- p: [8, 9]
+  k: )
+- p: [20, 21]
+  k: ']'
+- p: [33, 32]
+  k: '}'
+- p: [31, 32]
+  k: ESCAPE
+- p: [4, 3]
+  k: <
+- p: [7, 8]
+  k: '>'
+- p: [16, 17]
+  k: Ctl+V
+- p: [29, 28]
+  k: Ctl+X
+- p: [34, 35]
+  k: CAPS
+- p: [17, 16, 14, 15]
+  k: Ctl+~
+- p: [28, 27]
+  k: Ctl+C
+- p: [17, 16, 15]
+  k: Sft+Ctl+V
+- p: [25, 26]
+  k: '"'
+- p: [10, 23]
+  k: ;
+- p: [15, 35]
+  k: '&macro_a_umlaut'
+- p: [35, 2]
+  k: '&macro_u_umlaut'
+- p: [13, 35]
+  k: '&macro_o_umlaut'
+- p: [41, 35]
+  k: '&caps_word'
