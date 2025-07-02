@@ -221,7 +221,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
         default_layer {
             bindings = <
 &kp TILDE                           &kp MINUS                    &kp U                          &kp COMMA                     &kp C                       &kp Z                             &kp Q                       &kp G                       &kp Y                                     &kp H                      &kp COLON                  &kp BACKSLASH
-&kp TAB                             &kp O                        &hml LEFT_ALT I  &hml LSHIFT A   &hml LCTRL N  &kp M                             &kp D                       &hmr RCTRL T  &hmr RSHFT S                &hmr RALT L  &kp R                      &kp B
+&kp TAB                             &kp O                        &hml LEFT_ALT I  &hml LSHIFT A   &hml LCTRL N  &kp M                             &kp D                       &hmr RCTRL T  &hmr RSHFT S                &hmr LEFT_ALT L  &kp R                      &kp B
 &layer_or_keypress 4 BACKSPACE  &hml LGUI SQT  &kp SLASH                      &kp DOT                       &kp W                       &kp V                             &kp J                       &kp P                       &kp F                                     &kp K                      &hmr RGUI X  &layer_or_keypress 4 UNDER
                                                                                                 &tap_or_chage_layer 1 DELETE  &kp E                       &mo 1     &layer_or_keypress 2 ENTER  &kp SPACE                   &sticky_key_or_change_layer 2 LEFT_SHIFT
             >;
