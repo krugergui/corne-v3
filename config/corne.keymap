@@ -210,7 +210,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 			bindings = <
 				&trans &kp MINUS &kp PLUS &kp COMMA &trans  &trans &trans &trans &trans &trans &trans &trans
 				&trans &kp NUMBER_1 &hml LEFT_ALT NUMBER_2 &hml LEFT_SHIFT NUMBER_3 &hml LEFT_CONTROL NUMBER_4 &kp N5 &kp NUMBER_6 &hmr LEFT_CONTROL N7 &hmr LEFT_SHIFT N8 &hmr RIGHT_ALT N9 &kp N0 &kp EQUAL
-				&kp KP_ASTERISK &hml LEFT_WIN DOT &trans &kp DOT  &trans  &trans &trans &trans &trans &trans &trans &trans
+				&trans &hml LEFT_WIN ASTERISK &trans &kp DOT  &trans  &trans &trans &trans &trans &trans &trans &trans
 				&trans  &trans  &trans &trans &trans &trans
 			>;
 		};
